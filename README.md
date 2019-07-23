@@ -40,16 +40,12 @@ Minimum SDk version required:23
 Put the following at the bottom of your activity layout xml file. Probably inside a parent Relative Layout tag.
 
 ``` 
- 	<com.aseem.versatileprogressbar.ProgBar
+ 	<com.hardik.versatileprogressbar.VersatileProgressbar
         android:id="@+id/myProgBar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-	android:elevation="10dp"
-        app:barType="@drawable/bouncy_balls"
-        app:text="Please wait..."          
-        app:textSize="6sp"		   
-        app:enlarge="3"			     
-        app:androidtextColor="@color/colorPrimary"/> 
+        android:elevation="10dp"
+        />
 
 ```
 **Description**

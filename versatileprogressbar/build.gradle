@@ -6,23 +6,23 @@ apply plugin: 'com.github.dcendents.android-maven'
 
 ext {
 
-  bintrayRepo = "MultiProgressBar"
-  bintrayName = "com.aseem.versatileprogressbar"
+  bintrayRepo = "VersatileProgressbar"
+  bintrayName = "com.hardik.versatileprogressbar"
 
-  publishedGroupId = 'com.aseem.versatileprogressbar'
-  libraryName = 'MultiProgressBar'
-  artifact = 'MultiProgressBar'
+  libraryName = 'versatileprogressbar'
+
+  publishedGroupId = 'com.hardik.versatileprogressbar'
+  artifact = 'VersatileProgressbar'
+  libraryVersion = '1.0.0'
 
   libraryDescription = 'A Custom Progress Bar library to render different types of progress bars'
 
   siteUrl = 'https://github.com/Hardik8184/VersatileProgressbar'
   gitUrl = 'https://github.com/Hardik8184/VersatileProgressbar.git'
 
-  libraryVersion = '1.1.0'
-
-  developerId = 'Hardik8184'
-  developerName = 'Hardik8184'
-  developerEmail = 'hardik8184@gmail.com'
+  developerId = 'hardikdungrani'
+  developerName = 'Hardik Dungrani'
+  developerEmail = 'hardikdungrani8@gmail.com'
 
   licenseName = 'The Apache Software License, Version 2.0'
   licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
@@ -63,9 +63,11 @@ dependencies {
   implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 
+//Add these lines to publish library to bintray. This is the readymade scripts made by github user nuuneoi to make uploading to bintray easy.
+//Place it at the end of the file
 if (project.rootProject.file('local.properties').exists()) {
-  apply from: 'https://raw.githubusercontent.com/knight-rider1609/JCenter/master/installv1.gradle'
-  apply from: 'https://raw.githubusercontent.com/knight-rider1609/JCenter/master/bintrayv1.gradle'
+  apply from: 'https://raw.githubusercontent.com/Hardik8184/JCenter-Gradle-Scripts/master/install.gradle'
+  apply from: 'https://raw.githubusercontent.com/Hardik8184/JCenter-Gradle-Scripts/master/bintray.gradle'
 }
 
 repositories {

@@ -1,4 +1,4 @@
-package com.aseem.versatileprogressbar;
+package com.hardik.versatileprogressbar;
 
 import android.content.Context;
 import androidx.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.aseem.versatileprogressbar.test", appContext.getPackageName());
+        assertEquals("com.hardik.versatileprogressbar.test", appContext.getPackageName());
     }
 }

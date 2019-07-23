@@ -1,4 +1,4 @@
-package com.aseem.multiprogressbar;
+package com.hardik.progressbar;
 
 import android.content.Context;
 import androidx.test.InstrumentationRegistry;

@@ -1,4 +1,4 @@
-package com.aseem.multiprogressbar;
+package com.hardik.versatileprogressbar;
 
 import org.junit.Test;
 

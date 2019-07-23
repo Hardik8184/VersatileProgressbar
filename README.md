@@ -6,7 +6,7 @@
 
 <div>
   <p align="center">Built with ❤︎ by
-	  <a href="https://github.com/knight-rider1609">Aseem Khare</a></p>
+	  <a href="https://github.com/Hardik8184">Hardik Dungrani</a></p>
 </div>
 
 ![image](https://github.com/knight-rider1609/MultiProgressBar/blob/master/versatileprogressbar/src/main/res/drawable/bouncy_balls.gif)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -29,7 +29,7 @@
 Add this in your app's build.gradle file:
 ```groovy
 dependencies {
-  implementation 'com.aseem.versatileprogressbar:MultiProgressBar:1.1.0'
+  implementation 'com.hardik.versatileprogressbar:VersatileProgressbar:1.0.0'
 }
 ```
 ## ❔ Usage
@@ -138,7 +138,7 @@ You can programatically customize the progress bar using the following methods:
 	
 # 📃 License
 
-    Copyright 2019 Aseem Khare
+    Copyright 2019 Hardik Dungrani
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

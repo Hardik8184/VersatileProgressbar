@@ -10,7 +10,6 @@ import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
 
-import com.aseem.versatileprogressbar.R
 import com.bumptech.glide.Glide
 
 class VersatileProgressbar : RelativeLayout {

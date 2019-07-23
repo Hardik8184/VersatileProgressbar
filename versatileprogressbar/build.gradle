@@ -1,0 +1,73 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
+
+ext {
+
+  bintrayRepo = "MultiProgressBar"
+  bintrayName = "com.aseem.versatileprogressbar"
+
+  publishedGroupId = 'com.aseem.versatileprogressbar'
+  libraryName = 'MultiProgressBar'
+  artifact = 'MultiProgressBar'
+
+  libraryDescription = 'A Custom Progress Bar library to render different types of progress bars'
+
+  siteUrl = 'https://github.com/Hardik8184/VersatileProgressbar'
+  gitUrl = 'https://github.com/Hardik8184/VersatileProgressbar.git'
+
+  libraryVersion = '1.1.0'
+
+  developerId = 'Hardik8184'
+  developerName = 'Hardik8184'
+  developerEmail = 'hardik8184@gmail.com'
+
+  licenseName = 'The Apache Software License, Version 2.0'
+  licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+  allLicenses = ["Apache-2.0"]
+}
+
+android {
+
+  compileSdkVersion 29
+
+  defaultConfig {
+    minSdkVersion 23
+    targetSdkVersion 29
+    versionCode 1
+    versionName "1.0"
+
+    testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+  }
+
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    }
+  }
+}
+
+dependencies {
+  implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+  implementation 'androidx.appcompat:appcompat:1.0.2'
+  implementation 'com.github.bumptech.glide:glide:4.9.0'
+
+  testImplementation 'junit:junit:4.12'
+  androidTestImplementation 'androidx.test:runner:1.2.0'
+  androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+  implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+
+if (project.rootProject.file('local.properties').exists()) {
+  apply from: 'https://raw.githubusercontent.com/knight-rider1609/JCenter/master/installv1.gradle'
+  apply from: 'https://raw.githubusercontent.com/knight-rider1609/JCenter/master/bintrayv1.gradle'
+}
+
+repositories {
+  mavenCentral()
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="VersatileProgressbar">
+        <attr name="barType"/>
+        <attr name="text" format="string"/>
+        <attr name="androidtextColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="enlarge"/>
+    </declare-styleable>
+</resources>

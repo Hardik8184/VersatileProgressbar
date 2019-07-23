@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <View
+      android:id="@+id/progBg"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:alpha="0"
+      android:background="@android:color/white"
+      />
+
+  <ImageView
+      android:id="@+id/progressImg"
+      android:layout_width="match_parent"
+      android:layout_height="100dp"
+      android:layout_centerInParent="true"
+      android:contentDescription="@string/app_name"
+      android:scaleType="centerInside"
+      />
+
+  <TextView
+      android:id="@+id/textMsg"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/progressImg"
+      android:gravity="center"
+      android:text="Please wait..."
+      />
+
+</RelativeLayout>
